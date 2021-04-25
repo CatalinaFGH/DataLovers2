@@ -1,0 +1,116 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-image: url(images/wallpaper.jpg);
+    animation: muv 5s infinite linear alternate;
+}
+
+@keyframes muv{
+  from{
+    background-position: top;
+  }
+  to{
+    background-position: center;
+  }
+}
+/* Primera pantalla */
+.sectionContainer{
+  display: flex;
+}
+
+.logo{
+    height: 35vh;
+    margin-top: 15vh;
+    margin-left: 3vw;
+}
+
+.image{
+    height: 99vh;
+}
+
+.enterButtonContainer{
+    position: absolute;
+}
+
+.enterButton{
+    margin-top: 57vh;
+    margin-left: 15vw;
+    padding: 4vh 3vw;
+    font-size: 33px;
+    font-weight: bold;
+    letter-spacing: 1vh;
+    font-family: orbitron;
+    border-radius: 9vh;
+    color: #D2DA4C;
+    background-color: #13ACC9;
+    box-shadow: 0 0 50px #d2da4c;
+    text-shadow: 2px 2px 3px #000000;
+    cursor: pointer;
+    outline: none;
+}
+
+.enterButton:hover{
+    background-color: #D2DA4C;
+    box-shadow: 0 0 50px #13ACC9;
+    color:#13ACC9;
+}
+/* Primera pantalla versión mobile */
+@media (max-width: 575.98px) and (orientation: portrait){
+
+.sectionContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    height: 15vh;
+    margin-top: 15vh;
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
+}
+
+.enterButtonContainer{
+  margin-top: 0vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+}
+
+.enterButton{
+  padding: 2vh 8vw;
+  font-size: 20px;
+  margin-top: 0vh;
+  margin-bottom: 10vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
+}
+
+.image{
+  height: 45vh;
+  margin-top: 15vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/* Segunda pantalla */
