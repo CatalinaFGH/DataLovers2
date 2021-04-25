@@ -11,12 +11,12 @@
   <body>
 
 <!-- Primera pantalla -->
-<section class="sectionContainer">
+<section class="sectionContainer" id="sectionContainer">
   <div class="logoContainer">
     <img src="images/logo3.png" alt="R&M logo" class="logo">
   </div>
   <div class="enterButtonContainer">
-    <button class="enterButton">ENTRAR</button>
+    <button class="enterButton" id="enterButton">ENTER</button>
   </div>
   <div class="imageContainer">
     <img src="images/series.png" alt="rick&morty" class="image">
@@ -24,6 +24,53 @@
 </section>
 
 <!-- Segunda pantalla -->
+<main class="charactersPage"id="charactersPage">
+<header>
+  <div class="headerContainer">
+  <img src="images/series3.png" alt="rick&morty" class="secondImage">
+  <h2>CHARACTERS</h2>
+  <div>
+    <input type="text" id= "searchInput" placeholder="SEARCH">
+  </div>
+  </div>
+</header>
+
+<section class="filtersContainer">
+  <div class="filterAZ">
+    <select name="select" id="selectOrderAZ" class="selectFilter">
+      <option value="" selected>ORDEN ALFABÉTICO</option>
+      <option value="1">A-Z</option>
+      <option value="2">Z-A</option>
+    </select>
+  </div>
+  <div class="filter-species">
+    <select name="select" id="selectSpecies" class="selectFilter">
+      <option value="" selected>SELECCIONE ESPECIE</option>
+      <option value="Human">HUMANS</option>
+      <option value="Alien">ALIENS</option>
+      <option value="Humanoid">HUMANOID</option>
+      <option value="Robot">ROBOT</option>
+      <option value="Parasite">PARASITE</option>
+      <option value="Animal">ANIMAL</option>
+      <option value="Vampire">VAMPIRE</option>
+      <option value="Cronenberg">CRONENBERG</option>
+      <option value="Mytholog">MYTHOLOG</option>
+      <option value="Disease">DISEASE</option>
+      <option value="unknown">UNKNOWN</option>
+      <option value="Poopybutthole">POOPYBUTTHOLE</option>
+    </select>
+  </div>
+  <div class="filter-origin">
+    <select name="select " id="selectGender" class="selectFilter">
+      <option value="" selected>SELECCIONE GÉNERO</option>
+      <option value="Female">FEMENINO</option>
+      <option value="Male">MASCULINO</option>
+      <option value="unknown">UNKNOWN</option>
+      <option value="Genderless">GENDERLESS</option>
+    </select>
+  </div>
+</section>
+</main>
 
 
 
