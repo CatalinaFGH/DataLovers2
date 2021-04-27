@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
     <title>Rick&Morty</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&display=swap" rel="stylesheet"/>
   </head>
   <body>
 
@@ -28,14 +27,15 @@
 <header>
   <div class="headerContainer">
   <img src="images/series3.png" alt="rick&morty" class="secondImage">
-  <h2>CHARACTERS</h2>
+  <h1>CHARACTERS</h1>
   <div>
     <input type="text" id= "searchInput" placeholder="SEARCH">
   </div>
   </div>
 </header>
 
-<section class="filtersContainer">
+<section class="contentContainer">
+  <div class="filtersContainer">
   <div class="filterAZ">
     <select name="select" id="selectOrderAZ" class="selectFilter">
       <option value="" selected>ORDEN ALFABÉTICO</option>
@@ -68,6 +68,9 @@
       <option value="unknown">UNKNOWN</option>
       <option value="Genderless">GENDERLESS</option>
     </select>
+  </div>
+</div>
+  <div class="charactersContainer" id="dataContainer">
   </div>
 </section>
 </main>
