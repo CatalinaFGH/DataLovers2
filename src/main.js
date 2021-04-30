@@ -55,8 +55,8 @@ function printCharacters(data){
            <p class="characterName">${data[i].name}</p>
          </div>
          <div class="flip-card-back">
-           <img src="images/logo.png" class="cardBackImage">
-           <h3 class="cardBackName">${data[i].name}</h3>
+           <img src="images/logo.png" class="cardBackLogo">
+           <img src="images/series2.png" class="cardBackImage">
            <p class="cardInfo">Gender: ${data[i].gender}</p>
            <p class="cardInfo">Species: ${data[i].species}</p>
            <p class="cardInfo">Status: ${data[i].status}</p>

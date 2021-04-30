@@ -1,17 +1,18 @@
 *{
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
+/* Se oculta la segunda pantalla */
 .charactersPage{
   display: none;
 }
 
+/* Se le aplica el efecto de movimiento a la imagen de fondo */
 body{
-    background-image: url(images/wallpaper.jpg);
-    animation: muv 5s infinite linear alternate;
+  background-image: url(images/wallpaper.jpg);
+  animation: muv 5s infinite linear alternate;
 }
-
 @keyframes muv{
   from{
     background-position: top;
@@ -27,61 +28,61 @@ body{
 }
 
 .logo{
-    height: 35vh;
-    margin-top: 15vh;
-    margin-left: 3vw;
+  height: 35vh;
+  margin-top: 15vh;
+  margin-left: 3vw;
 }
 
 .image{
-    height: 99vh;
+  height: 99vh;
 }
 
 .enterButtonContainer{
-    position: absolute;
+  position: absolute;
 }
 
 .enterButton{
-    margin-top: 57vh;
-    margin-left: 15vw;
-    padding: 4vh 3vw;
-    font-size: 33px;
-    font-weight: bold;
-    letter-spacing: 1vh;
-    font-family: "orbitron", "sans-serif";
-    border-radius: 9vh;
-    color:#13ACC9;
-    background-color: #D2DA4C;
-    box-shadow: 0 0 50px #13ACC9;
-    text-shadow: 2px 2px 3px #000000;
-    cursor: pointer;
-    outline: none;
+  margin-top: 57vh;
+  margin-left: 15vw;
+  padding: 4vh 3vw;
+  font-size: 33px;
+  font-weight: bold;
+  letter-spacing: 1vh;
+  font-family: "orbitron", "sans-serif";
+  border-radius: 9vh;
+  color:#13ACC9;
+  background-color: #D2DA4C;
+  box-shadow: 0 0 50px #13ACC9;
+  text-shadow: 2px 2px 3px #000000;
+  cursor: pointer;
+  outline: none;
     -webkit-text-stroke-color: #000;
     -webkit-text-stroke-width: 0.1px;
 }
 
 .enterButton:hover{
-    background-color: #13ACC9;
-    box-shadow: 0 0 50px #D2DA4C;
-    color: #D2DA4C;
-    transition: 0.5s;
+  background-color: #13ACC9;
+  box-shadow: 0 0 50px #D2DA4C;
+  color: #D2DA4C;
+  transition: 0.5s;
 }
 
-/* Primera pantalla versión mobile */
+/* Primera pantalla versión mobile---------------------------------------------------------------- */
 @media (max-width: 575.98px) and (orientation: portrait){
 
 .sectionContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo{
-    height: 15vh;
-    margin-top: 15vh;
-    margin-bottom: 0vh;
-    margin-left: 0vw;
-    margin-right: 0vw;
+  height: 15vh;
+  margin-top: 15vh;
+  margin-bottom: 0vh;
+  margin-left: 0vw;
+  margin-right: 0vw;
 }
 
 .enterButtonContainer{
@@ -104,7 +105,7 @@ body{
   margin-top: 15vh;
 }
 }
-/* FIN de la primera pantalla versión mobile */
+/* FIN de la primera pantalla versión mobile------------------------------------------------------------- */
 
 /* ----------------------------------------Segunda pantalla ----------------------------------------------*/
 
@@ -148,7 +149,6 @@ h1{
   padding: 0.4em 1.4em 0.3em 0.8em;
   width: 18vw;
   box-sizing: border-box;
-  /* margin: 20px auto; */
   margin-top: 14vh;
   border: 1px solid #13ACC9;
   box-shadow: 0 1px 0 1px rgba(12, 221, 23, 0.03);
@@ -220,7 +220,7 @@ h1{
 }
 
 /* Sección de personajes */
-/* -------------------------Frente de la tarjeta------------------------------- */
+/* -------------------------------Frente de la tarjeta------------------------------- */
 .charactersContainer{
   display: flex;
   flex-wrap: wrap;
@@ -234,7 +234,6 @@ h1{
 }
 
 .card{
-  height: 33vh;
   background: linear-gradient(to bottom, #13ACC9 65%, #f7f7f7 100%);
 }
 
@@ -252,14 +251,13 @@ h1{
   text-shadow: 2px 1px 2px #fff;
 }
 
-/* -------------------------Parte de atrás de la tarjeta con la info de los personajes------------------------------- */
-
+/* --------------------------Parte de atrás de la tarjeta con la info de los personajes------------------------------- */
 .flip-card {
   background-color: transparent;
-  height: 33vh;
+  height: 35vh;
   width: 12vw;
   perspective: 1000px;
-  margin: 3vh 1vw;
+  margin: 2vh 1vw;
 }
 
 .flip-card-inner {
@@ -278,7 +276,7 @@ h1{
   position: absolute;
   /* -webkit-backface-visibility: hidden; */
   backface-visibility: hidden;
-  width: 95%;
+  width: 11.5vw;
   height: 35vh;
   border: solid 3px #fff;
   border-radius: 7px;
@@ -294,50 +292,30 @@ h1{
 
 .cardInfo{
   font-size: 14px;
-  padding: 1vh 0vw;
 }
 
-.cardBackName{
-  padding: 1vh 0vw;
-  font-size: 16px;
-}
-
-.cardBackImage{
+.cardBackLogo{
   height: 9vh;
 }
 
+.cardBackImage{
+  height: 15vh;
+  margin-top: -3.5vh;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Segunda pantalla versión mobile */
+/* Segunda pantalla versión mobile------------------------------------------------------------------ */
 @media (max-width: 575.98px) and (orientation: portrait){
 
 .headerContainer{
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .contentContainer{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .secondImage{
@@ -345,49 +323,142 @@ h1{
 }
 
 h1{
-    font-size: 25px;
-    margin-top: 0vh;
+  font-size: 25px;
+  margin-top: 0vh;
 }
 
 #searchInput{
   background-size: 2vh;
   background-position: 2vh;
-    font-size: 12px;
-    padding: 1vh 1vw 1vh 10vw;
-    margin-top: 1vh;
+  font-size: 12px;
+  padding: 1vh 1vw 1vh 10vw;
+  margin-top: 1vh;
 }
 
 .selectFilter{
   font-size: 12px;
-    padding: 0.4em 1.4em 0.3em 0.8em;
-    width: 70vw;
-    margin-top: 2vh;
-    letter-spacing: 0.5vw;
+  padding: 0.4em 1.4em 0.3em 0.8em;
+  width: 70vw;
+  margin-top: 2vh;
+  letter-spacing: 0.5vw;
 }
 
+/* Sección de personajes versión mobile*/
+/* Frente de la tarjeta versión mobile*/
 .charactersContainer {
   width: 95vw;
   height: 100vh;
   margin-top: 1vh;
+  margin-left: 0vw;
 }
 
 .card{
-  height: 10vh;
-  width: 20vw;
-    margin: 5vh 1vw;
-    display: flex;
-    flex-direction: column;
+  margin: 0vh 0vw;
+  display: flex;
+  flex-direction: column;
 }
 
 .cardImage{
-  height: 10vh;
+  height: 12vh;
 }
 
 .characterName{
   font-size: 10px;
-  padding-top: 0.5vh;
-  padding-bottom: 2vh;
-  width: 16vw;
+  /* padding-top: 0vh;
+  padding-bottom: 0vh;
+  width: 0vw;
+  height: 0vh; */
+}
+
+/* Parte de atrás de la tarjeta versión mobile */
+.flip-card {
+  background-color: transparent;
+  height: 20vh;
+  width: 27vw;
+  perspective: 1000px;
+  margin: 2vh 1vw;
+}
+
+.flip-card-inner {
+  position: relative;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  text-align: center;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.card, .flip-card-back {
+  position: absolute;
+  /* -webkit-backface-visibility: hidden; */
+  backface-visibility: hidden;
+  width: 25vw;
+  height: 19vh;
+  border: solid 3px #fff;
+  border-radius: 7px;
+}
+
+.flip-card-back {
+  background-color: #fff;
+  color: #000;
+  font-family: "orbitron";
+  font-weight: bold;
+  transform: rotateY(180deg);
+}
+
+.cardInfo{
+  font-size: 10px;
+  padding: 0vh 0vw;
+}
+
+.cardBackLogo{
   height: 5vh;
 }
+
+.cardBackImage{
+  height: 8vh;
+  margin-top: -2vh;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
