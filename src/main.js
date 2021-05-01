@@ -1,6 +1,6 @@
 // import { example } from './data.js';
 import data from './data/rickandmorty/rickandmorty.js';
-
+import functions from './data.js'
 // console.log(example, data);
 
 //Variables globales para cambiar de pantalla
@@ -37,14 +37,7 @@ let seriesData = data.results;
 //     card.appendChild(name);
 //   }
 // }
-
-
-
-                // <div id="card" class="card"> 
-                //    <img src="${data[i].image}" class="cardImage">
-                //    <p class="characterName">${data[i].name}</p>
-                // </div>
-
+// window.addEventListener("load", printCharacters(seriesData));
 function printCharacters(data){
   let list = "";
   for(let i = 0; i < data.length; i++){
@@ -70,21 +63,35 @@ function printCharacters(data){
 document.getElementById("dataContainer").innerHTML = printCharacters(seriesData);
 
 
+//Función para filtrar la data
+function selectFunction() {
+  let TheFiltersArray = seriesData;
+  let filterGender = document.getElementById("selectGender").value;
+  let filterSpecies = document.getElementById("selectSpecies").value;
+  // let orderAZ = document.getElementById("selectOrderAZ").value;
+  let searchBar = document.getElementById("searchInput").value;
+  //si el filtro no viene vacío se ejecuta la función filtrar, que devolverá el arreglo con los datos filtrados
+  if (filterGender != "") {
+    TheFiltersArray = functions.toFilter(TheFiltersArray, "gender", filterGender);
+  }
+  if (filterSpecies != "") {
+    TheFiltersArray = functions.toFilter(TheFiltersArray, "species", filterSpecies);
+  }
+  // if (orderAZ != "") {
+  //   TheFiltersArray = toOrderAZ(TheFiltersArray, orderAZ);
+  // }
+  if (searchBar != "") {
+    TheFiltersArray = functions.search(TheFiltersArray, searchBar);
+  }
 
-
-{/* <div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <p>${data[i].name}</p>
-      <p>Gender: ${data[i].gender}</p>
-      <p>Species: ${data[i].species}</p>
-      <p>Status: ${data[i].status}</p>
-    </div>
-  </div>
-</div> */}
+  //Pintamos las cartas otra vez, pero con la data filtrada
+  document.getElementById("dataContainer").innerHTML = printCharacters(TheFiltersArray);
+}
+selectFunction();
+document.getElementById("selectGender").addEventListener("change", selectFunction);
+document.getElementById("selectSpecies").addEventListener("change", selectFunction);
+// document.getElementById("selectOrderAZ").addEventListener("change", selectFunction);
+document.getElementById("searchInput").addEventListener("keyup", selectFunction);
 
 
 
