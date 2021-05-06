@@ -1,4 +1,6 @@
-# Data Lovers
+# Actualización Proyecto Data Lovers: "Rick and Morty"
+
+## DEMO : [Portal de Rick y Morty](https://catalinafgh.github.io/DataLovers2/src/)
 
 ## Índice
 
