@@ -19,21 +19,20 @@ function printCharacters(data){
   let list = "";
   for(let i = 0; i < data.length; i++){
        list += `<div class="flip-card">
-       <div class="flip-card-inner">
-         <div class="card" id="card">
-           <img src="${data[i].image}" class="cardImage">
-           <p class="characterName">${data[i].name}</p>
-         </div>
-         <div class="flip-card-back">
-           <img src="images/logo.png" class="cardBackLogo">
-           <img src="images/series2.png" class="cardBackImage">
-           <p class="cardInfo">Gender: ${data[i].gender}</p>
-           <p class="cardInfo">Species: ${data[i].species}</p>
-           <p class="cardInfo">Status: ${data[i].status}</p>
-         </div>
-       </div>
-     </div>
-     </div>`
+                  <div class="flip-card-inner">
+                    <div class="card" id="card">
+                       <img src="${data[i].image}" class="cardImage">
+                       <p class="characterName">${data[i].name}</p>
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="images/logo.png" class="cardBackLogo">
+                        <img src="images/series2.png" class="cardBackImage">
+                        <p class="cardInfo">Gender: ${data[i].gender}</p>
+                        <p class="cardInfo">Species: ${data[i].species}</p>
+                        <p class="cardInfo">Status: ${data[i].status}</p>
+                    </div>
+                 </div>
+               </div>`
   }
   return list;
 }
