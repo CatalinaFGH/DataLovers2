@@ -25,25 +25,21 @@ body{
 /* ----------------------------------------Primera pantalla ----------------------------------------------*/
 .sectionContainer{
   display: flex;
+  align-items: center;
+}
+
+.logoContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 .logo{
   height: 35vh;
-  margin-top: 15vh;
-  margin-left: 3vw;
-}
-
-.image{
-  height: 99vh;
-}
-
-.enterButtonContainer{
-  position: absolute;
 }
 
 .enterButton{
-  margin-top: 57vh;
-  margin-left: 15vw;
   padding: 4vh 3vw;
   font-size: 33px;
   font-weight: bold;
@@ -67,6 +63,10 @@ body{
   transition: 0.5s;
 }
 
+.imageContainer{
+  display: flex;
+}
+
 /* Primera pantalla versión mobile---------------------------------------------------------------- */
 @media (max-width: 575.98px) and (orientation: portrait){
 
@@ -74,35 +74,21 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-content: center;
   align-items: center;
 }
 
 .logo{
-  height: 15vh;
-  margin-top: 15vh;
-  margin-bottom: 0vh;
-  margin-left: 0vw;
-  margin-right: 0vw;
-}
-
-.enterButtonContainer{
-  margin-top: 0vh;
-  margin-left: 0vw;
-  margin-right: 0vw;
+  height: 20vh;
 }
 
 .enterButton{
   padding: 2vh 8vw;
   font-size: 20px;
-  margin-top: 0vh;
-  margin-bottom: 10vh;
-  margin-left: 0vw;
-  margin-right: 0vw;
 }
 
 .image{
-  height: 45vh;
-  margin-top: 15vh;
+  height: 50vh;
 }
 }
 /* FIN de la primera pantalla versión mobile------------------------------------------------------------- */
